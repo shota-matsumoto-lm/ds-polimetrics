@@ -5,4 +5,4 @@ dependencies:
   - r-tidyverse
   - r-dygraphs
   - r-purrr
-  - r-interplot
+  - r-arm
