@@ -2,5 +2,5 @@ channel_priority: strict
 channels:
   - conda-forge
 dependencies:
-  - r-irkernel=1.1.1
   - r-base=4.0.3
+  - r-irkernel>=1.1
