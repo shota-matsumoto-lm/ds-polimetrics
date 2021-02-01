@@ -2,4 +2,4 @@ channel_priority: strict
 channels:
   - conda-forge
 dependencies:
-  - r-base=4.0.3
+  - r-base=4.0.0
