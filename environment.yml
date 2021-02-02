@@ -3,4 +3,3 @@ channels:
   - conda-forge
 dependencies:
   - r-base=4.0.3
-  - r-irkernel>=1.1
