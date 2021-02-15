@@ -1,2 +1,3 @@
+libstdc++6
 fonts-noto-cjk
 fonts-noto-cjk-extra
