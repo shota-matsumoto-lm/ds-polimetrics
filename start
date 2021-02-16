@@ -1,12 +1,12 @@
 #!/bin/bash
-set -x
+set -e
 
 function ldpathmunge () {
   case ":${LD_LIBRARY_PATH}:" in
     *:"$1":*) ;;
-    *) LD_LIBRARY_PATH=$1:${LD_LIBRARY_PATH}
+    *) export LD_LIBRARY_PATH=$1:${LD_LIBRARY_PATH}
   esac
 }
 
-ldpathmunge /srv/conda/envs/notebook/lib
+ldpathmunge ${NB_PYTHON_PREFIX}/lib
 exec "$@"
