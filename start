@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+export LD_LIBRARY_PATH=/srv/conda/envs/notebook/lib:${LD_LIBRARY_PATH}
+exec "$@"
