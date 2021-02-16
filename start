@@ -1,12 +1,4 @@
 #!/bin/bash
 set -e
-
-function ldpathmunge () {
-  case ":${LD_LIBRARY_PATH}:" in
-    *:"$1":*) ;;
-    *) export LD_LIBRARY_PATH=$1:${LD_LIBRARY_PATH}
-  esac
-}
-
-ldpathmunge ${NB_PYTHON_PREFIX}/lib
+export LD_LIBRARY_PATH=${NB_PYTHON_PREFIX}/lib:${LD_LIBRARY_PATH}
 exec "$@"
